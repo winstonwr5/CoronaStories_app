@@ -18,9 +18,12 @@ class Form extends React.Component {
   // handles submit
   handleSubmit = (e) => {
     e.preventDefault()
-    this.props.handleCreate(this.state)
+    if(this.props.view.page ==='addStory'){
+      this.props.handleCreate(this.state)
+    } else if(this.props.view.page ==='editStory'){
+      this.props.handleCreate(this.state)
+    }
   }
-
   componentDidMount() {
     this.setState({
       name: this.props.formInputs.name,

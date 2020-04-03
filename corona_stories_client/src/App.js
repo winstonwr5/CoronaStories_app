@@ -37,8 +37,8 @@ class App extends Component {
                 pageTitle = 'Want to Change Something?'
                 formInputs = {
                     name: story.name,
-                    body: story.body
-                    // id: story.id
+                    body: story.body,
+                    id: story.id
                 }
                 break
             default:
