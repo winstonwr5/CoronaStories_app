@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Main from './components/Main.js'
 import './App.css';
 
+import Header from './components/Header.js'
+import Aside from './components/Aside.js'
+
 class App extends Component {
     state = {
         view: {
@@ -15,7 +18,7 @@ class App extends Component {
         }
     }
 
-    handleView = (view, post) => {
+    handleView = (view, story) => {
         let pageTitle = ''
         let formInputs = {
             name: '',
@@ -34,8 +37,13 @@ class App extends Component {
                 pageTitle = 'Want to Change Something?'
                 formInputs = {
                     name: story.name,
+<<<<<<< HEAD
                     body: story.body,
                     id: story.id
+=======
+                    body: story.body
+                    // id: story.id
+>>>>>>> 4fdf6caa2e542dae6377aa38efca22fabca79877
                 }
                 break
             default:
