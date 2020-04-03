@@ -10,7 +10,7 @@ class App extends Component {
         },
         formInputs: {
             name: null,
-            story: null,
+            body: null,
             id: null
         }
     }
@@ -19,7 +19,7 @@ class App extends Component {
         let pageTitle = ''
         let formInputs = {
             name: '',
-            story: '',
+            body: '',
             id: null
         }
 
@@ -34,7 +34,7 @@ class App extends Component {
                 pageTitle = 'Want to Change Something?'
                 formInputs = {
                     name: story.name,
-                    story: story.story
+                    body: story.body
                     id: story.id
                 }
                 break
