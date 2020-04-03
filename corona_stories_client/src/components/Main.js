@@ -1,5 +1,6 @@
 import React from 'react'
 import Post from './Post.js'
+import Form from './Form.js'
 
 class Main extends React.Component {
     state = {
