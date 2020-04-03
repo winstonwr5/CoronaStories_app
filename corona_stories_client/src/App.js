@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Main from './components/Main.js'
-import './App.css';
-
 import Header from './components/Header.js'
 import Aside from './components/Aside.js'
 
@@ -38,7 +36,8 @@ class App extends Component {
                 formInputs = {
                     name: story.name,
                     body: story.body,
-                
+                    id: story.id
+
                 }
                 break
             default:

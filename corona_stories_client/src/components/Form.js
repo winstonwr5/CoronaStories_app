@@ -18,7 +18,11 @@ class Form extends React.Component {
   // handles submit
   handleSubmit = (e) => {
     e.preventDefault()
-    this.props.handleCreate(this.state)
+    if(this.props.view.page === 'addStory') {
+        this.props.handleCreate(this.state)
+    } else if (this.props.view.page === 'editStory') {
+        this.props.handleUpdate(this.state)
+    }
   }
 
   componentDidMount() {
@@ -38,7 +42,7 @@ class Form extends React.Component {
         </label>
         <label id="story-form">
           story
-          <textarea placeholder="Write you coronavirus story here" id="body" value={this.state.body} onChange={this.handleChange}></textarea>
+          <textarea placeholder="Write your coronavirus story here" id="body" value={this.state.body} onChange={this.handleChange}></textarea>
         </label>
         <input type="submit" value="share"/>
       </form>
