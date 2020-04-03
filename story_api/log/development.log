@@ -504,3 +504,11 @@ Processing by StoriesController#index as */*
 Completed 200 OK in 34ms (Views: 25.6ms | ActiveRecord: 0.6ms | Allocations: 1746)
 
 
+Started GET "/stories" for ::1 at 2020-04-03 16:22:08 -0400
+  [1m[35m (24.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoriesController#index as */*
+  [1m[36mStory Load (1.0ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/controllers/stories_controller.rb:8:in `index'
+Completed 200 OK in 568ms (Views: 338.0ms | ActiveRecord: 211.8ms | Allocations: 4942)
+
+

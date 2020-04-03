@@ -35,19 +35,8 @@ class App extends Component {
                 pageTitle = 'Want to Change Something?'
                 formInputs = {
                     name: story.name,
-<<<<<<< HEAD
-<<<<<<< HEAD
                     body: story.body,
                     id: story.id
-=======
-                    body: story.body
-                    // id: story.id
->>>>>>> 4fdf6caa2e542dae6377aa38efca22fabca79877
-=======
-                    body: story.body,
-                    id: story.id
-
->>>>>>> 82e7fab9b1edade84568131819a89ce3029388c9
                 }
                 break
             default:
